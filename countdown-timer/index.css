@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(226, 242, 247);
+  height: 100vh;
+}
+main {
+  width: 90vw;
+  margin: 30px auto;
+}
+h1,
+p {
+  margin: 5px 0;
+}
+img {
+  width: 90vw;
+}
+.deadline {
+  margin: 10px 0;
+  display: flex;
+  column-gap: 20px;
+}
+
+.deadline div {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+aside {
+  height: auto;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 750px) {
+  main {
+    width: 700px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  img {
+    width: 300px;
+    height: 250px;
+  }
+}

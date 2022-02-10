@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(224, 234, 238);
+  position: relative;
+}
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: rgb(248, 116, 28);
+  animation: bounce 2s linear infinite alternate both;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.side-bar {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  width: 100vw;
+  height: auto;
+  gap: 20px;
+  flex-direction: column;
+}
+.show.side-bar {
+  display: flex;
+}
+header {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+#cancel {
+  font-size: 1.5rem;
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul li {
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+li:hover {
+  background-color: tan;
+}
+
+.socials i {
+  display: inline-block;
+  margin: 5px;
+  transition: 0.2s linear;
+}
+.socials i:hover {
+  transform: translateY(-5px);
+  color: cadetblue;
+}
+
+@media screen and (min-width: 500px) {
+  .side-bar {
+    width: 60vw;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 750px) {
+  .side-bar {
+    width: 40vw;
+    height: 100vh;
+  }
+}

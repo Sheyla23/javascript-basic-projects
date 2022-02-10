@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: honeydew;
+}
+
+h1 {
+  margin: 20px auto;
+  position: relative;
+  width: fit-content;
+}
+
+h1::after {
+  content: "";
+
+  height: 3px;
+  background-color: chocolate;
+  width: 70%;
+  position: absolute;
+  top: 100%;
+  left: 15%;
+}
+img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  display: block;
+}
+.photo {
+  border-radius: 10px;
+  border: 2px solid chocolate;
+}
+button {
+  padding: 4px 7px;
+  margin-left: 20px;
+  background-color: white;
+  border: 2px solid chocolate;
+  border-radius: 7px;
+  transition: 0.3s linear;
+  letter-spacing: 2px;
+}
+button:hover {
+  background-color: chocolate;
+  color: white;
+}
+.buttons {
+  margin: 10px;
+  text-align: center;
+}
+.menu-item {
+  margin: 20px auto;
+  width: 300px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px dotted grey;
+  width: 300px;
+}
+
+p {
+  text-align: justify;
+  width: 300px;
+}
+
+@media screen and (min-width: 780px) {
+  .menu-item {
+    width: 640px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  header {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  img {
+    height: 150px;
+    width: 200px;
+  }
+  header,
+  p {
+    width: 200px;
+  }
+  .menu-item {
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  header {
+    margin: 0;
+  }
+  .menu {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px auto;
+  }
+}

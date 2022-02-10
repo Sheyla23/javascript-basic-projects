@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(252, 246, 238);
+}
+section {
+  width: 100vw;
+  text-align: center;
+}
+h1 {
+  margin: 20px auto;
+  position: relative;
+  width: fit-content;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(207, 59, 22);
+}
+article {
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px;
+  max-height: 600px;
+  max-width: 500px;
+  box-shadow: 1px 1px 5px 1px grey;
+}
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+h2,
+h4,
+p {
+  padding-bottom: 5px;
+}
+button {
+  display: block;
+  margin: 5px auto;
+  cursor: pointer;
+  padding: 2px;
+}
+button:hover {
+  background-color: rgb(240, 231, 231);
+  border-radius: 5px;
+}
+
+span {
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+span:hover {
+  border: 1px solid gainsboro;
+  padding: 5px;
+  cursor: pointer;
+}

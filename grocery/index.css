@@ -1,0 +1,50 @@
+main {
+  width: 80vw;
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgb(235, 242, 255);
+}
+.menu div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+#edit,
+#delete {
+  display: inline-block;
+}
+#edit {
+  color: green;
+}
+
+#delete {
+  color: red;
+}
+#clear {
+  background-color: rgb(255, 96, 96);
+  cursor: pointer;
+  color: white;
+  width: 50%;
+  margin-bottom: 10px;
+  margin: 5px auto;
+  display: block;
+}
+h3 {
+  color: rgb(42, 139, 139);
+}
+.alert {
+  background-color: cadetblue;
+  color: white;
+  padding: 5px;
+}
+input,
+button {
+  padding: 5px;
+  margin: 5px;
+}
+@media screen and (min-width: 425px) {
+  main {
+    max-width: 320px;
+  }
+}

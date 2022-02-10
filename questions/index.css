@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(228, 242, 248);
+}
+h1 {
+  font-family: Corinthia, cursive;
+  color: goldenrod;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px;
+}
+article {
+  padding: 10px;
+  height: auto;
+  margin: 15px auto;
+  width: 90vw;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgb(218, 216, 216);
+}
+div {
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+p {
+  padding: 10px 0;
+  position: relative;
+  display: none;
+}
+
+p::before {
+  content: "";
+  height: 1px;
+  background-color: grey;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+button {
+  padding: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  article {
+    width: 60vw;
+  }
+}
